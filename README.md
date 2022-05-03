@@ -29,10 +29,10 @@
 **Motors are one of the most common actuators and provide rotational motion. When given power, the motor will spin with speed proportional to the voltage and torque proportional to the current. They are controlled with a talon.**
 #### TalonSRX motor controllers
 - To import
-	- To import TalonSRX `import com.ctre.phoenix.motorcontrol.can.*;`
+	- To import TalonSRX `import com.ctre.phoenix.motorcontrol.can.TalonSRX*;`
 	- To import control modes `import com.ctre.phoenix.motorcontrol.ControlMode;`
 - To initialize
-	- To initialize motor `WPI_TalonSRX Motor = new WPI_TalonSRX(6);`
+	- To initialize motor `TalonSRX Motor = new TalonSRX(6);`
 	- To initialize automatic deadband `Motor.enableDeadbandElimination(true);`
 - To use (with various control modes)
 	- Set motor absolute power `Motor.set(ControlMode.PercentOutput, value);` with value as double between -1 and 1
